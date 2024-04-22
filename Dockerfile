@@ -39,8 +39,6 @@ ARG BUILD_DEPENDENCIES="              \
         pkg-config"
 
 ARG DEPENDENCIES="                    \
-        default-libmysqlclient-dev    \
-        default-mysql-client          \
         libldap2-dev                  \
         libsasl2-dev                  \
         libxml2-dev                   \
@@ -84,7 +82,6 @@ ARG DEPENDENCIES="                    \
 
 ARG TOOLS="                           \
         ca-certificates               \
-        default-libmysqlclient-dev    \
         openssh-client                \
         sshpass"
 
