@@ -6,9 +6,7 @@
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <link rel="shortcut icon" href="{{ INTERFACE.favicon }}" type="image/x-icon">
-    <title>
-        {{ INTERFACE.login_title }}
-    </title>
+    <title>数据平台总店</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     {% include '_head_css_js.html' %}
     <!-- Stylesheets -->
@@ -280,7 +278,7 @@
 {% endif %}
 <div class="login-content extra-fields-{{ extra_fields_count }}">
     <div class="right-image-box">
-        <a href="{% if not XPACK_ENABLED %}https://github.com/jumpserver/jumpserver.git{% endif %}">
+        <a href="{% if not XPACK_ENABLED %}#{% endif %}">
             <img src="{{ INTERFACE.login_image }}" class="right-image" alt="screen-image"/>
         </a>
     </div>
@@ -365,7 +363,7 @@
                     </div>
 
                     <div class="form-group">
-                        <button type="submit" class="btn btn-transparent" onclick="doLogin();return false;">
+                        <button type="submit" class="btn btn-transparent" onClick="doLogin();return false;">
                             {% trans 'Login' %}
                         </button>
                     </div>
